@@ -1,0 +1,553 @@
+/*27213c*/
+
+/*Global Styles*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+p {
+    font-size: 1.6rem;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+body {
+    background-color: #fafafa;
+}
+/*Header*/
+header {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    font-size: 2rem;
+
+}
+main {
+    width: 100%;
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-brand {
+    width: 12rem;
+}
+
+.menu-icons {
+    font-size: 3.5rem;
+    color : #27213c;
+    cursor: pointer;
+}
+.close i {
+    color: #FFF;
+}
+.nav-list {
+    width: 33%;
+    height: 100vh;
+    background-color: rgb(34, 32, 32);
+    position: fixed;
+    top: 0;
+    right: -33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+}
+.nav-item {
+    margin: 1.5rem;
+}
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+/*Hero*/
+.hero {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(221, 221, 224, 0.5) 0%, rgba(239, 236, 248, 0.3) 100%), url("images/tarta-frutilla2.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    font-size: 2rem;
+
+    color: #27213c;
+
+    text-transform: uppercase;
+    transform: translateY(20%);
+
+}
+
+.main-message h3 {
+    font-size: 1.6rem;
+}
+.main-message h1 {
+    font-family: 'Aldrich', sans-serif;
+    width: 100%;
+    max-width: 98rem;
+    font-size: 5rem;
+    margin: 2rem 0;
+    display: flex;
+    padding: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+};
+
+.main-message p {
+    text-transform: lowercase;
+}
+.btn {
+    background-color: #27213c;
+    border-radius: 2rem;
+    color: #fff;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+.btn:hover {
+    background-color: #ce587b;
+}
+.producto1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem 5rem;
+    justify-content: center;
+
+}
+.producto2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem 5rem;
+    justify-content: center;
+
+}
+
+.producto3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+padding: 3rem 2rem 5rem;
+justify-content: center;
+
+}
+
+.producto4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem 5rem;
+    justify-content: center;
+
+}
+
+.producto5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem 5rem;
+    justify-content: center;
+}
+
+
+.container-products {
+    background: lightblue;
+    width: 100%;
+    /*     min-width: 35rem; */
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+.cabsha {
+    min-height: 60vh;
+    max-height: 100vh;
+    width: 100%;
+    background: #f8f0f0;
+    margin: 0 auto;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 0 0rem 0rem;
+    text-align: center;
+    align-items: center;
+}
+
+.cookies {
+    min-height: 60vh;
+    max-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background: #f8f0f0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 0 0rem 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.tarta-frutilla {
+
+    min-height: 60vh;
+    max-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    background: #f8f0f0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 0 0rem 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.pan-dulce {
+    min-height: 60vh;
+    max-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    background: #f8f0f0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 0 0rem 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.lemmon-pie {
+    min-height: 60vh;
+    max-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    background: #f8f0f0;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 0 0rem 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+.circle1 img {
+    width: 100%;
+    min-height: 5vh;
+}
+
+
+.circle2 img {
+    width: 100%;
+    min-height: 5vh;
+}
+
+.circle3 img {
+    width: 100%;
+    min-height: 15vh;
+}
+.circle4 img {
+    width: 100%;
+    min-height: 5 vh;
+}
+.circle5 img {
+    width: 100%;
+    min-height: 5 vh;
+}
+
+
+.info h1 {
+    color: #27213c;
+    font-size: 3rem;
+}
+.info h3 {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    color: #27213c;
+    font-weight: lighter;
+}
+.purchase {
+    width: 100%;
+}
+
+button.mercadopago-button {
+    background: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color : #27213c;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+    border: none;
+}
+/* // ICONO DE WHATSAPP FLOTANDO EN LA PAGINA */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+/* // ICONO DE WHATSAPP FLOTANDO EN LA PAGINA */
+.my-float {
+    margin-top: 16px;
+}
+
+
+/*SECCION DE CONTACTO*/
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container-contact {
+    border-radius: 5px;
+    background-color: #e4e2e2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-contact h1 {
+    font-size: 40px;
+    color: #27213c;
+}
+
+.container-contact h3 {
+    font-size: 20px;
+    padding: 0 5rem;
+    color: #27213c;
+
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: #fafafa;
+}
+.footer-top img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+}
+.socials-whatsapp {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+}
+.socials-whatsapp a {
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    color: black;
+}
+.socials-instagram {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    size: 4rem;
+}
+.socials-instagram a {
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    color: black;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-family: sans-serif;
+    size: 10px;
+    padding: 5px;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media(max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .container-products {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .producto1 {
+        padding: 3rem 1.5rem 5rem;
+    }
+    .producto2 {
+        padding: 3rem 1.5rem 5rem;
+    }
+    .producto3 {
+        padding: 3rem 1.5rem 5rem;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .socials-whatsapp {
+        display: flex;
+        flex-direction: column;
+    }
+    .socials-instagram {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
